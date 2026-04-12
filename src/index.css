@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -32,9 +33,19 @@ a {
 }
 
 body {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: "Merriweather", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  word-wrap: break-word;
+  font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+h1,
+h2,
+h3 {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 18px;
 }
 
 a {
