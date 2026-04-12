@@ -1,0 +1,11 @@
+main {
+  ul {
+    list-style: disc;
+    list-style: inherit;
+
+    li {
+      margin-bottom: 0.25em;
+      line-height: 1.9;
+    }
+  }
+}

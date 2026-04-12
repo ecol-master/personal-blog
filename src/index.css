@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  /* --background: #f1f1f1; */
+  --background: #000
+}
+
+html {
+  background: var(--background);
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* :root {
+  max-width: 720px;
+  margin: 0 auto;
+  align-content: flex-start;
+} */
+
+h1,
+h2,
+h3,
+p,
+li,
+a {
+  text-align: left;
+  /* line-height: 27.35px; */
+  line-height: 1;
+}
+
+body {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+a {
+  color: #6db3f2
+}
