@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <>
-      <div className="layout-wrapper">
+      <div className={`layout-wrapper${isPostPage ? " layout-wrapper-post" : ""}`}>
         <nav>
           <div className="nav-content">
             {!isPostPage && <h1>Kuzmin Dmitry</h1>}
