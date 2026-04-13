@@ -8,6 +8,7 @@
 // Post Preview styles
 .post-preview-content {
   line-height: 2;
+  min-width: 0;
 
   .post-title {
     font-size: 28px;
@@ -53,4 +54,23 @@
   height: 1px;
   background-color: #dddddd3c;
   margin: 20px 0;
+}
+
+@media (max-width: 640px) {
+  .blog-description {
+    margin-bottom: 1.5em;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .post-preview-content .post-title {
+    font-size: 24px;
+    line-height: 1.1;
+  }
+
+  .post-preview-content p {
+    font-size: 16px;
+  }
 }

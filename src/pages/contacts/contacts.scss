@@ -1,6 +1,7 @@
 .contacts-page {
   display: grid;
   gap: 1.75rem;
+  min-width: 0;
 }
 
 .contacts-header p {
@@ -13,11 +14,13 @@
 .contacts-list {
   display: grid;
   gap: 0.85rem;
+  min-width: 0;
 }
 
 .contact-card {
   display: grid;
   gap: 0.35rem;
+  min-width: 0;
   padding: 1rem 0;
   border-bottom: 1px solid #dddddd3c;
   text-decoration: none;
@@ -38,4 +41,19 @@
 
 .contact-card:hover .contact-value {
   color: #6db3f2;
+}
+
+@media (max-width: 640px) {
+  .contacts-page {
+    gap: 1.4rem;
+  }
+
+  .contacts-header p {
+    font-size: 16px;
+  }
+
+  .contact-value {
+    font-size: 1.05rem;
+    overflow-wrap: anywhere;
+  }
 }
