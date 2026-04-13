@@ -12,6 +12,10 @@
     margin-top: 48px;
 }
 
+.layout-wrapper > * {
+    min-width: 0;
+}
+
 
 nav {
     padding-bottom: 18px;
@@ -56,4 +60,43 @@ nav::after {
     height: 1px;
     background-color: #dddddd3c;
     margin: 20px 0;
+}
+
+@media (max-width: 640px) {
+    .layout-wrapper {
+        padding-left: 14px;
+        padding-right: 14px;
+        margin-top: 40px;
+    }
+
+    .layout-wrapper.layout-wrapper-post {
+        margin-top: 28px;
+    }
+
+    nav {
+        padding-bottom: 14px;
+    }
+
+    nav .nav-content h1 {
+        font-size: 24px;
+        margin-bottom: 0.7em;
+    }
+
+    nav .nav-content .nav-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.35rem 0;
+        line-height: 1.5;
+        min-width: 0;
+    }
+
+    nav .nav-content .nav-links a,
+    nav .nav-content .nav-links .separator {
+        padding: 0 0.35em;
+    }
+
+    nav::after {
+        margin: 16px 0;
+    }
 }
